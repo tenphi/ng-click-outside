@@ -1,0 +1,28 @@
+{
+  "name": "ng-click-outside",
+  "main": "tnp-click-outside.js",
+  "version": "0.0.1",
+  "authors": [
+    "Andrey Yamanov <tenphi@gmail.com>"
+  ],
+  "description": "An angular directive to bind an action to a click outside the element.",
+  "keywords": [
+    "angular",
+    "directive",
+    "event",
+    "bind",
+    "action",
+    "click",
+    "outside",
+    "element"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tenphi/tnp-click-outside",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
