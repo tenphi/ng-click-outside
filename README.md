@@ -7,11 +7,15 @@ An angular directive to bind an action for a click outside the element. Uses the
 
 Bower
 
-  $ bower install ng-click-outside --save
+```bash
+$ bower install ng-click-outside --save
+```
   
 NPM
 
-  $ npm install ng-click-outside --save
+```bash
+$ npm install ng-click-outside --save
+```
 
 ###Usage
 
@@ -20,6 +24,14 @@ Basic example:
 ```javascript
 app.module('app', ['tenphi.clickOutside']);
 ```
+
+webpack syntax
+
+```javascript
+app.module('app', [require('ng-click-outside')]);
+```
+
+markup
 
 ```html
 <div class="dropdown" tnp-click-outside="open = false">
