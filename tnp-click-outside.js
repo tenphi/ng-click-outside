@@ -6,7 +6,7 @@
   }
 
   angular.module('tenphi.clickOutside', [])
-    .factory('clickOutsideService', function($window) {
+    .factory('clickOutsideService', ['$window', function($window) {
       var objs = {};
       var index = 0;
 
@@ -34,8 +34,8 @@
           delete objs[index];
         }
       }
-    })
-    .directive('tnpClickOutside', function(clickOutsideService) {
+    }])
+    .directive('tnpClickOutside', ['clickOutsideService', function(clickOutsideService) {
       return {
         restrict: 'A',
         link: function($scope, $el, attrs) {
@@ -55,6 +55,6 @@
           });
         }
       }
-    });
+    }]);
 
 })();
